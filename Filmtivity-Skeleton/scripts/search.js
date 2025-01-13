@@ -10,8 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// trqbva da si vzema api key
-
 function fetchMovie(title) {
  fetch('https://api.themoviedb.org/3/search/movie?api_key=4b42cd75f9ee878cac9bf18dc90f1ea5&query=${title}')
     .then(response => response.json())
