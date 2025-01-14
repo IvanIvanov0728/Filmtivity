@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
     fetchTopTenMovies();
 });
 function fetchTopTenMovies() {
-    fetch('https://api.themoviedb.org/3/search/movie?api_key=4b42cd75f9ee878cac9bf18dc90f1ea5&sort_by=popularity.desc')
+    fetch('https://api.themoviedb.org/3/discover/movie?api_key=4b42cd75f9ee878cac9bf18dc90f1ea5&sort_by=popularity.desc')
      .then(response => response.json())
      .then(data => displayMovies(data.results.slice(0, 12)))
      .catch(error => console.error(error));
