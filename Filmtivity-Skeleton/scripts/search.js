@@ -16,7 +16,7 @@ function fetchMovie(title) {
     .then(data => {
         const movie = data.results[0]
         document.getElementById('title').textContent = movie.title;
-        document.getElementById('release-date').textContent = movie.release_date;
+        document.getElementById('release_date').textContent = movie.release_date;
         document.getElementById('overview').textContent = movie.overview;
         document.getElementById('vote_average').textContent = movie.vote_average;
         document.getElementById('original_language').textContent = movie.original_language;
